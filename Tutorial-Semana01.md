@@ -14,7 +14,7 @@ Você também vai encontrar aqui as **instruções da primeira ponderada de prog
 
 Nesse módulo, como vocês já devem saber, vamos desenvolver projetos com **Internet das Coisas** (ou IoT - Internet of Things). Nesse novo universo de hardwares e componentes, usaremos linguagens de programação (como Arduino e C/C++) para descrever as tarefas que os nossos microcontroladores (as "placas" Arduino e ESP32) irão executar. 
 
-Para que a gente consiga desenvolver os projetos do módulo, construir alguns robôs ou equipar nossas casas com sistemas inteligentes e cheios de "coisas", vamos precisar começar do começo: também conhecido como *blink*, o `Hello World` do arduíno é fazer um LED piscar. 
+Para que a gente consiga desenvolver os projetos do módulo, construir alguns robôs ou até equipar nossas casas com sistemas inteligentes e cheios de "coisas", vamos precisar começar do começo: também conhecido como *blink*, o `Hello World` do arduíno é fazer um LED piscar. 
 
 Seguindo esse tutorial até o final, você vai conseguir realizar todas as instalações necessárias, preparar o ambiente e conhecer algumas das ferramentas que usaremos nesse módulo. No final desse arquivo, você encontrará a descrição da ponderada de programação.
 
@@ -30,7 +30,7 @@ Eu sei! Eu sei! Parece coisa demais. Mas eu também sei que até agora vocês co
 O que você vai aprender:
 - Linguagem de Programação Arduino e C/C++ 
 - Microcontrolador Arduino
-- Circuito Eletrônico (Simulação e Físico)
+- Circuito Eletrônico (Simulador e Montagem Física)
 
 <br>
 <br>
@@ -39,11 +39,11 @@ O que você vai aprender:
 
 **1. Conhecer a linguagem (C++)**
 
-No card [`Fundamentos de Linguagem C/C++ (parte I)`](https://en.wikibooks.org/wiki/C%2B%2B_Programming), você vai encontrar um guia da estrutura fundamental da linguagem C++ (Organização de Arquivos, declarações, variáveis, tipos, controles de fluxo). É essa linguagem que usaremos para programar nossos microcontroladores.
+No card [`Fundamentos de Linguagem C/C++ (parte I)`](https://en.wikibooks.org/wiki/C%2B%2B_Programming), você vai encontrar um guia da estrutura fundamental da linguagem C++ (organização de Arquivos, declarações, variáveis, tipos, controles de fluxo). É essa linguagem que usaremos para programar nossos microcontroladores.
 
 **2. Conhecendo os materiais (componentes)**
 
-No card [`Explodindo um Capacitor`](https://www.youtube.com/watch?v=C54Cp819Ebc), você vai ser introduzido a alguns componentes eletrônicos importantes para o módulo. Esse vídeo explica brevemente como funciona um circuito eletrônico, introduz um diagrama esquemático, apresenta leds, resistores, potenciômetros, capacitores, relés, diodos e transistors, além de demonstrar o uso de um multímetro. 
+No card [`Explodindo um Capacitor`](https://www.youtube.com/watch?v=C54Cp819Ebc), você vai ser introduzido a alguns componentes eletrônicos importantes para o módulo. Esse vídeo explica brevemente como funciona um circuito eletrônico, introduz um diagrama esquemático, apresenta leds, resistores, potenciômetros, capacitores, relés, diodos e transistores, além de demonstrar o uso de um multímetro. 
 
 
 **3. Resistores, Corrente, Tensão... E agora?**
@@ -53,17 +53,17 @@ No card [`Pode colocar resistor no negativo do LED?`](https://www.youtube.com/wa
 
 **4. Como programar Arduino?**
 
-No card [`Instalação de ambiente - Arduino IDE`](https://www.youtube.com/watch?v=B6JMZWqPBsM), você vai entender como instalar a IDE do Arduino, conectar sua placa no seu computador e enviar seus primeiros programas para serem executados no Arduíno. 
+No card [`Instalação de ambiente - Arduino IDE`](https://www.youtube.com/watch?v=B6JMZWqPBsM), você vai entender como instalar a IDE do Arduino, conectar sua placa no seu computador e enviar seus primeiros programas para serem executados no Arduino. 
 
 Faça o download da IDE e explore alguns exemplos aqui: [arduino.cc](https://www.arduino.cc/en/software)
 
 **5. Sobre a Protoboard**
 
-No card [`Como usar a Protoboard`](https://www.youtube.com/watch?v=DfU6llvIMcM), você vai entender como uma protoboard funciona por dentro - e isso vai te ajudar muito nesse módulo. É nessa plaquinha que você vai construir seus circuitos, montando e desmontando enquanto você aprende e testa. Ela funciona como solução temporária para prototipagem de circuitos.
+No card [`Como usar a Protoboard`](https://www.youtube.com/watch?v=DfU6llvIMcM), você vai entender como uma protoboard funciona por dentro - e isso vai te ajudar muito nesse módulo. É nessa plaquinha que você vai construir seus circuitos, montando e desmontando enquanto você aprende e testa. Ela funciona como solução temporária para a prototipagem de circuitos.
 
 **6. Sobre o Multímetro**
 
-No card [`Como usar o Multímetro`](https://www.youtube.com/watch?v=1WIWrmc-rBk), você vai entender como o Multímetro pode te ajudar nesse módulo. Ele é um instrumento de medição que pode verificar várias grandezas elétricas, como tensão (voltagem), corrente e resistência. Usaremos bastante para testar a continuidade dos nossos circuitos. 
+No card [`Como usar o Multímetro`](https://www.youtube.com/watch?v=1WIWrmc-rBk), você vai entender como o Multímetro pode te ajudar nesse módulo. Ele é um instrumento de medição que pode verificar várias grandezas elétricas, como tensão (voltagem), corrente e resistência. Também usaremos bastante esse equipamento para testar a continuidade de ligações dos nossos circuitos.
 
 
 **7. Simulador Tinkercad**
@@ -73,7 +73,7 @@ Imagina se toda vez que a gente quisesse testar um circuito precisássemos reali
 
 **8. Projetos com Arduino - Pisca LED (opcional!)**
 
-Se você chegou até aqui, está com a IDE instalada, o arduíno funcionando e está confiante dos seus aprendizados, no card opcional [`Projetos com Arduino - Pisca LED`](https://www.youtube.com/watch?v=t0tCMcDhbZE), você vai encontrar uma demonstração de um projeto básico em Arduíno. Ele inclui a montagem de um circuíto na protoboard com led e resistor, além da programação do led piscando. Durante a instrução, você terá a oportunidade de montar esse circuito na prática! 
+Se você chegou até aqui, está com a IDE instalada, o Arduino funcionando e está confiante dos seus aprendizados, no card opcional [`Projetos com Arduino - Pisca LED`](https://www.youtube.com/watch?v=t0tCMcDhbZE), você vai encontrar uma demonstração de um projeto básico em Arduino. Este material inclui a montagem de um circuito na protoboard com led e resistor, além da programação do led piscando. Durante a instrução, você terá a oportunidade de montar esse circuito na prática! 
 
 
 ## PONDERADA DE PROGRAMAÇÃO
@@ -96,11 +96,11 @@ Na placa, bem ao lado do logotipo do Arduino (o símbolo do infinito), podemos r
 ### Parte 1: Blink Led Interno  
 > Essa `Parte 1` deverá ser realizada **antes da sua instrução de programação**. 
 
-Instale a Arduino IDE em seu computador e assista aos vídeos indicados nos autoestudos. Você deverá realizar o "blink" com esse LED Interno e postar em seu github as evidências dessa realização. 
+Instale a Arduino IDE em seu computador e assista aos vídeos indicados nos autoestudos conforme o roteiro descrito anteriormente. Você deverá realizar o "blink" com esse LED Interno e postar em seu GitHub as evidências dessa realização. 
 
 Você vai fazer o led ficar aceso por um tempo X, apagar e aguardar Y segundos e depois voltar a acender, propondo um loop que gera uma "luz piscando".
 
-⚠️ **Entrega Parte 1**: em seu github pessoal, inserir screenshots de sua tela com o IDE e seu código, além de uma fotografia que demonstre seu arduino ligado no computador e o seu led aceso. Você também poderá enviar um vídeo que evidencie esse funcionamento.
+⚠️ **Entrega Parte 1**: em seu GitHub pessoal (usando sua conta com email Inteli), inserir screenshots de sua tela com o IDE e seu código, além de uma fotografia que demonstre seu Arduino ligado no computador e o seu led aceso. Você também poderá enviar um vídeo que evidencie esse funcionamento.
 
 <br>
 <br>
