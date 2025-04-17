@@ -1,4 +1,4 @@
-# Plano de Estudos: Semana 02
+# Semana 02
 > Esse material deve te ajudar a explorar os autoestudos dessa semana.
 
 
